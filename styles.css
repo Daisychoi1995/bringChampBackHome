@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  background-color: #463F3A;
+  font-family: "Lilita One", serif;
+  color: #F4F3EE;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: #463F3A;
+    
+  }
+  
+50% {
+  background-color: #686563;
+}
+}
+
+#progressBarContainer {
+  width: 400px;
+  height: 50px;
+  background-color: white;
+}
+
+#progressBar {
+  height: 100%;
+  background-color: #BCB8B1;
+  color: #463F3A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+  text-align: right;
+}
+.maximize { 
+  padding: 200px 0;
+  font-size: 3rem;
+  width: 90%;
+  cursor: pointer;
+}
+
+.minimize {
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+#minimize-img {
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(150px, 0);
+  }
+  
+  80% {
+    transform: translate(-150px, 0);
+  }
+}
+
+#button :hover {
+  background-color: #8A817C;
+}
+
+
+#button {
+  font-family: "Lilita One", serif;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #BCB8B1;
+  color: #F4F3EE;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+.endingImage {
+  width: 200px;
+  height: 200px;
+}
